@@ -13,7 +13,7 @@ public class Main {
         s = new Socket("localhost", 8080);
         PrintWriter out = new PrintWriter(s.getOutputStream(), true);
         BufferedReader input = new BufferedReader(new InputStreamReader(s.getInputStream()));
-        out.println("Test message");
+        out.println("Test mes");
         StringBuilder sb = new StringBuilder(8096);
         while (true) {
             if (input.ready()) {
